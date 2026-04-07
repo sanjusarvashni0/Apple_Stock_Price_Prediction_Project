@@ -143,26 +143,6 @@ Instead, manual tuning was performed.
 
 ---
 
-## 📂 Project Structure
-
-```
-Apple-Stock-Prediction/
-│
-├── data/
-│   └── AAPL.csv
-│
-├── notebooks/
-│   ├── data_preprocessing.ipynb
-│   └── model_building.ipynb
-│
-├── report/
-│   └── project_report.pdf
-│
-└── README.md
-```
-
----
-
 ## 🛠️ Tech Stack
 
 * Python 🐍
