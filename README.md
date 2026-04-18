@@ -40,7 +40,7 @@ Adjusted Close reflects the true stock value after accounting for dividends and 
 
 * Converted `Date` column to datetime format
 * Set `Date` as index (time-series structure)
-* Handled missing values (dropped minimal rows)
+* Handled missing values (forward fill)
 * Selected **Adj Close** for modeling
 * Applied **MinMax Scaling** (0–1 normalization)
 * Created sequences:
@@ -80,16 +80,6 @@ Adjusted Close reflects the true stock value after accounting for dividends and 
 * Optimizer: Adam
 * Epochs: 10
 * Batch Size: 32
-
----
-
-## 📈 Results
-
-| Model | Prediction Horizon | MSE   |
-| ----- | ------------------ | ----- |
-| LSTM  | 1-day              | 24.93 |
-| RNN   | 5-day              | 34.81 |
-| RNN   | 10-day             | 24.14 |
 
 ---
 
